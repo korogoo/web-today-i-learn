@@ -1,148 +1,213 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <!-- TODO: Open Graph 메타 태그를 설정하세요 -->
-    <!-- <meta property="og:title" content="페이지 제목" /> -->
-    <!-- <meta property="og:description" content="페이지 설명" /> -->
-    <!-- <meta property="og:image" content="./images/thumbnail.jpg" /> -->
+    <meta property="og:title" content="BE 코로구" />
+    <meta
+            property="og:description"
+            content="코로구의 자기소개와 TIL 기록 페이지"
+    />
+    <meta property="og:image" content="./images/gallery3.jpg" />
 
-    <title>Today I Learn</title>
+    <title>BE 코로구</title>
+
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/index.js" defer></script>
-  </head>
-  <body>
-    <!-- 상단 내비게이션 -->
-    <nav class="top-nav">
-      <span class="nav-logo">My Page</span>
-      <ul class="nav-links">
-        <li><a href="#about">자기소개</a></li>
-        <li><a href="#gallery">갤러리</a></li>
-        <li><a href="#works">인생 작품</a></li>
-        <li><a href="#til">TIL</a></li>
-      </ul>
+</head>
+<body>
+<header>
+    <nav class="top-nav" aria-label="페이지 섹션 내비게이션">
+        <span class="nav-logo">korogoo</span>
+        <ul class="nav-links">
+            <li><a href="#profile">프로필</a></li>
+            <li><a href="#info">기본 정보</a></li>
+            <li><a href="#about">자기소개</a></li>
+            <li><a href="#gallery">갤러리</a></li>
+            <li><a href="#works">인생 작품</a></li>
+            <li><a href="#til">TIL</a></li>
+        </ul>
     </nav>
 
-    <!-- 프로필 히어로 -->
-    <section class="hero" id="about">
-      <div class="profile-card">
-        <div class="profile-image">
-          <!-- TODO: 프로필 이미지를 넣어주세요 -->
-          <!-- <img src="./images/profile.jpg" alt="프로필 사진" /> -->
+    <section class="hero" id="profile">
+        <div class="profile-card">
+            <div class="profile-image">
+                <img src="./images/gallery3.jpg" alt="밴드 몽글덤과 음악을 좋아하는 구의 프로필 이미지" />
+            </div>
+            <div class="profile-info">
+                <h1>코로구</h1>
+                <p class="tagline">음악과 개발을 좋아하는 백엔드 개발자</p>
+                <p class="hero-intro">
+                    내일 테코톡인데 이거 하고있다
+                </p>
+            </div>
         </div>
-        <div class="profile-info">
-          <h1>닉네임</h1>
-          <p class="tagline">한 줄 소개를 작성해주세요.</p>
-        </div>
-      </div>
+    </section>
+</header>
+
+<main>
+    <section class="content-section" id="info">
+        <h2>기본 정보</h2>
+        <table class="info-table">
+            <tbody>
+            <tr>
+                <th scope="row">닉네임</th>
+                <td>코로구</td>
+            </tr>
+            <tr>
+                <th scope="row">소속</th>
+                <td>태초마을</td>
+            </tr>
+            <tr>
+                <th scope="row">관심 분야</th>
+                <td>개발, 음악, 영상</td>
+            </tr>
+            <tr>
+                <th scope="row">코딩 노래</th>
+                <td>꽃남, 아그대, 젤다의전설 ost</td>
+            </tr>
+            </tbody>
+        </table>
     </section>
 
-    <main>
-      <!-- 자기소개 -->
-      <section class="content-section">
+    <section class="content-section" id="about">
         <h2>자기소개</h2>
-        <p>자기소개를 작성해주세요.</p>
-        <!-- TODO: 소개 글 안에 블로그, GitHub 등 관련 링크를 <a> 태그로 연결하세요 -->
-      </section>
+        <p>
+            안녕하세요. 저는 개발과 음악을 좋아하는 코로구입니다.<br/>
+            드럼, 베이스, 기타, 신디 다 좋아하고, 밥 먹으면서 개발 얘기하는 거 좋아합니다.
+        </p>
+        <p>
+            영상 찍고 기록하는 것도 좋아해서 <a href="https://www.youtube.com/@goo99_" target="_blank" rel="noopener noreferrer">유투브</a>도 하고 있습니다.ㅋㅋ<br/>
+        </p>
+        <p>
+            게임도 정말 좋아합니다. 오버워치, 배그, 닌텐도 게임 등등 가리지 않아요.<br/>
+            오버워치 때문에 대학 못 갔습니다.<br/>
+        </p>
+        <p>
+            근데 좀 많이 내성적입니다.<br/>
+            먼저 말 걸어 주시면 잘 말 하는데, 말을 절대 먼저 못 거는 병이 있습니다...
+        </p>
+    </section>
 
-      <!-- 기본 정보 -->
-      <section class="content-section" id="info">
-        <h2>기본 정보</h2>
-        <!-- TODO: 자신의 기본 정보를 표(<table>)로 정리하세요 -->
-        <table class="info-table">
-          <tr>
-            <th>이름</th>
-            <td></td>
-          </tr>
-          <tr>
-            <th>MBTI</th>
-            <td></td>
-          </tr>
-          <tr>
-            <th>취미</th>
-            <td></td>
-          </tr>
-          <tr>
-            <th>좋아하는 음식</th>
-            <td></td>
-          </tr>
-        </table>
-      </section>
-
-      <!-- 나만의 갤러리 -->
-      <section class="content-section" id="gallery">
+    <section class="content-section" id="gallery">
         <h2>나만의 갤러리</h2>
-        <p class="section-desc">갤러리 부제를 작성해주세요. (예: 기억에 남는 여행지)</p>
-        <div class="gallery-grid">
-          <!-- TODO: 9장의 이미지를 배치하세요 -->
-          <!--
-          <img src="./images/gallery-1.jpg" alt="갤러리 이미지 1" />
-          <img src="./images/gallery-2.jpg" alt="갤러리 이미지 2" />
-          ...
-          -->
-        </div>
-      </section>
+        <p class="section-desc">요즘 나를 가장 잘 보여주는 사진 1개와 영상 2개</p>
 
-      <!-- 나를 울린 인생 작품 -->
-      <section class="content-section" id="works">
+        <div class="gallery-grid media-grid">
+            <figure class="gallery-item media-card photo-card">
+                <img src="./images/gallery1.jpg" alt="몽글덤 밴드 활동을 보여주는 사진" />
+            </figure>
+
+            <figure class="gallery-item media-card video-card">
+                <video controls preload="metadata" poster="./images/video1-poster.jpg">
+                    <source src="./videos/band-live.mp4" type="video/mp4" />
+                    브라우저가 video 태그를 지원하지 않습니다.
+                </video>
+            </figure>
+
+            <figure class="gallery-item media-card video-card">
+                <video controls preload="metadata" poster="./images/video2-poster.jpg">
+                    <source src="./videos/band-live2.mp4" type="video/mp4" />
+                    브라우저가 video 태그를 지원하지 않습니다.
+                </video>
+            </figure>
+        </div>
+    </section>
+
+    <section class="content-section" id="works">
         <h2>나를 울린 인생 작품</h2>
-        <div class="works-list">
-          <!-- TODO: 최소 2가지 작품을 소개하세요 -->
-          <!-- TODO: 작품 중 하나는 <video> 또는 <iframe>으로 영상을 삽입하세요 -->
-          <article class="work-card">
-            <div class="work-thumbnail">
-              <!-- 작품 이미지 -->
-            </div>
-            <div class="work-info">
-              <h3>작품 제목</h3>
-              <p>작품에 대한 설명을 작성해주세요.</p>
-            </div>
-          </article>
-        </div>
-      </section>
+        <ul class="works-list">
+            <li>
+                <article class="work-card">
+                    <div class="work-thumbnail">
+                        <img src="./images/gallery2.jpg" alt="영화 위플래시를 표현한 포스터 스타일 이미지" />
+                    </div>
+                    <div class="work-info">
+                        <h3>진격의 거인</h3>
+                        <p>
+                            이걸 보고 다른 애니를 봐도 절대 만족하지 못하는 상황에 이름
+                        </p>
+                    </div>
+                </article>
+            </li>
+            <li>
+                <article class="work-card">
+                    <div class="work-thumbnail video-box">
+                        <iframe
+                                src="https://www.youtube.com/embed/jDTh3jdxxBw"
+                                title="몽글한 밴드 감성을 떠올리게 하는 음악 영상"
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                        ></iframe>
+                    </div>
+                    <div class="work-info">
+                        <h3>영상: 자작곡</h3>
+                        <p>
+                            광기의 뮤비
+                        </p>
+                    </div>
+                </article>
+            </li>
+        </ul>
+    </section>
 
-      <!-- TIL (Today I Learned) -->
-      <section class="content-section" id="til">
+    <section class="content-section" id="til">
         <h2>TIL</h2>
-        <p class="section-desc">오늘 새롭게 배운 것들을 기록합니다.</p>
+        <p class="section-desc">오늘 배운 HTML, CSS, JavaScript를 기록합니다.</p>
 
-        <!-- TIL 작성 폼 -->
         <form class="til-form" id="til-form">
-          <div class="form-group">
-            <label for="til-date">날짜</label>
-            <input type="date" id="til-date" name="date" required />
-          </div>
-          <div class="form-group">
-            <label for="til-title">제목</label>
-            <input type="text" id="til-title" name="title" placeholder="학습 주제를 입력하세요" required />
-          </div>
-          <div class="form-group">
-            <label for="til-content">내용</label>
-            <textarea id="til-content" name="content" placeholder="오늘 배운 내용을 정리해주세요" required></textarea>
-          </div>
-          <div class="form-actions">
-            <button type="submit">등록</button>
-            <button type="reset">초기화</button>
-          </div>
+            <div class="form-group">
+                <label for="til-date">날짜</label>
+                <input type="date" id="til-date" name="date" required />
+            </div>
+
+            <div class="form-group">
+                <label for="til-title">학습 주제</label>
+                <input
+                        type="text"
+                        id="til-title"
+                        name="title"
+                        placeholder="예: CSS Grid로 갤러리 레이아웃 만들기"
+                        required
+                />
+            </div>
+
+            <div class="form-group">
+                <label for="til-content">내용</label>
+                <textarea
+                        id="til-content"
+                        name="content"
+                        placeholder="오늘 새롭게 배운 내용을 작성해보세요"
+                        required
+                ></textarea>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit">등록</button>
+                <button type="reset">초기화</button>
+            </div>
         </form>
 
-        <!-- TIL 목록: 폼으로 등록하면 여기에 항목이 추가됩니다 -->
         <div class="til-list" id="til-list">
-          <!-- 아래는 예시 항목입니다. 자유롭게 수정하거나 삭제하세요 -->
-          <article class="til-item">
-            <time>2026-03-15</time>
-            <h3>HTML 시멘틱 태그</h3>
-            <p>header, nav, main, section, article, footer 등 시멘틱 태그의 역할과 사용법을 배웠다.</p>
-          </article>
+            <p class="til-empty" id="til-empty-message">
+                아직 직접 추가한 TIL이 없습니다. 위 폼에 오늘 배운 내용을 적어보세요.
+            </p>
+            <article class="til-item">
+                <time datetime="2026-03-19">2026-03-19</time>
+                <h3>상태 패턴 이해하기</h3>
+                <p>
+                    상태에 따라 행동과 결과가 달라지는 경우 if 문 분기 대신에 상태 패탠 고려해보기
+                </p>
+            </article>
         </div>
-      </section>
+    </section>
+</main>
 
-    </main>
-
-    <footer>
-      <p>&copy; My Page</p>
-    </footer>
-  </body>
+<footer>
+    <p>&copy; 2026 GU TIL PAGE</p>
+    <span class="site-footer-note">music, code, game, record</span>
+</footer>
+</body>
 </html>
